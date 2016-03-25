@@ -1,0 +1,359 @@
+<md-toolbar>
+    <div class="md-toolbar-tools">
+        <!--<md-button class="md-icon-button" aria-label="Settings">-->
+        <!--<md-icon md-svg-icon="img/icons/menu.svg"></md-icon>-->
+        <!--</md-button>-->
+        <h2>
+            <span>Signa App</span>
+        </h2>
+        <span flex></span>
+        <md-button class="md-icon-button" aria-label="Favorite">
+            <md-icon md-svg-icon="img/icons/favorite.svg" style="color: greenyellow;"></md-icon>
+        </md-button>
+        <md-button class="md-icon-button" aria-label="More">
+            <md-icon md-svg-icon="img/icons/more_vert.svg"></md-icon>
+        </md-button>
+        <span flex></span>
+        <md-button class="md-raised" aria-label="Learn More" ng-click="clickHandler()">
+            Copy HTML
+        </md-button>
+    </div>
+</md-toolbar>
+<md-content layout-padding layout-align="space-around center" layout="row">
+    <md-card>
+        <img src="/img/templates/template_1.png" class="md-card-image" alt="Washed Out">
+        <md-card-actions layout="row" layout-align="end center">
+            <md-button class="md-icon-button" aria-label="Favorite">
+                <md-icon aria-label="icon-home" class="material-icons">favorite</md-icon>
+            </md-button>
+            <md-button class="md-icon-button" aria-label="Settings">
+                <md-icon aria-label="icon-home" class="material-icons">art_track</md-icon>
+            </md-button>
+            <md-button class="md-icon-button" aria-label="Share">
+                <md-icon aria-label="icon-home" class="material-icons">send</md-icon>
+            </md-button>
+        </md-card-actions>
+    </md-card>
+    <md-card>
+        <img src="/img/templates/template_1.png" class="md-card-image" alt="Washed Out">
+        <md-card-actions layout="row" layout-align="end center">
+            <md-button class="md-icon-button" aria-label="Favorite">
+                <md-icon aria-label="icon-home" class="material-icons">favorite</md-icon>
+            </md-button>
+            <md-button class="md-icon-button" aria-label="Settings">
+                <md-icon aria-label="icon-home" class="material-icons">art_track</md-icon>
+            </md-button>
+            <md-button class="md-icon-button" aria-label="Share">
+                <md-icon aria-label="icon-home" class="material-icons">send</md-icon>
+            </md-button>
+        </md-card-actions>
+    </md-card>
+    <md-card>
+        <img src="/img/templates/template_1.png" class="md-card-image" alt="Washed Out">
+        <md-card-actions layout="row" layout-align="end center">
+            <md-button class="md-icon-button" aria-label="Favorite">
+                <md-icon aria-label="icon-home" class="material-icons">favorite</md-icon>
+            </md-button>
+            <md-button class="md-icon-button" aria-label="Settings">
+                <md-icon aria-label="icon-home" class="material-icons">art_track</md-icon>
+            </md-button>
+            <md-button class="md-icon-button" aria-label="Share">
+                <md-icon aria-label="icon-home" class="material-icons">send</md-icon>
+            </md-button>
+        </md-card-actions>
+    </md-card>
+    <md-card>
+        <img src="/img/templates/template_1.png" class="md-card-image" alt="Washed Out">
+        <md-card-actions layout="row" layout-align="end center">
+            <md-button class="md-icon-button" aria-label="Favorite">
+                <md-icon aria-label="icon-home" class="material-icons">favorite</md-icon>
+            </md-button>
+            <md-button class="md-icon-button" aria-label="Settings">
+                <md-icon aria-label="icon-home" class="material-icons">art_track</md-icon>
+            </md-button>
+            <md-button class="md-icon-button" aria-label="Share">
+                <md-icon aria-label="icon-home" class="material-icons">send</md-icon>
+            </md-button>
+        </md-card-actions>
+    </md-card>
+
+    <!--<md-card>-->
+        <!--<img src="/img/templates/template_1.png" class="md-card-image" alt="Washed Out">-->
+        <!--<md-card-actions layout="row" layout-align="end center">-->
+            <!--<md-button class="md-icon-button" aria-label="Favorite">-->
+                <!--<md-icon aria-label="icon-home" class="material-icons">favorite</md-icon>-->
+            <!--</md-button>-->
+            <!--<md-button class="md-icon-button" aria-label="Settings">-->
+                <!--<md-icon aria-label="icon-home" class="material-icons">art_track</md-icon>-->
+            <!--</md-button>-->
+            <!--<md-button class="md-icon-button" aria-label="Share">-->
+                <!--<md-icon aria-label="icon-home" class="material-icons">send</md-icon>-->
+            <!--</md-button>-->
+        <!--</md-card-actions>-->
+    <!--</md-card>-->
+    <!--<md-card align="center" flex>-->
+        <!--<md-button href="#" class="md-primary md-raised md-warn">Signa 2</md-button>-->
+    <!--</md-card>-->
+    <!--<md-card align="center" flex>-->
+        <!--<md-button href="#" class="md-primary md-raised md-warn">Signa 3</md-button>-->
+    <!--</md-card>-->
+    <!--<md-card align="center" flex>-->
+        <!--<md-button href="#" class="md-primary md-raised md-warn">Signa 4</md-button>-->
+    <!--</md-card>-->
+    <!--<md-card align="center" flex>-->
+        <!--<md-button href="#" class="md-primary md-raised md-warn">Signa 5</md-button>-->
+    <!--</md-card>-->
+
+</md-content>
+
+<div  flex layout="row">
+    <div layout-padding flex layout="column">
+        <md-card>
+            <form name="inputForm">
+                <div layout="column" layout-gt-xs="row">
+                    <md-input-container class="md-block" flex>
+                        <label>First name</label>
+                        <input ng-model="user.name">
+                    </md-input-container>
+                    <md-input-container class="md-block" flex>
+                        <label>Position</label>
+                        <input ng-model="user.position">
+                    </md-input-container>
+                    <md-input-container class="md-block" flex>
+                        <label>Company</label>
+                        <input ng-model="user.company">
+                    </md-input-container>
+                </div>
+                <div layout="column" layout-gt-xs="row">
+                    <md-input-container class="md-block" flex>
+                        <label>Phone</label>
+                        <input name="phone" ng-model="user.phone">
+                        <!-- ng-pattern="/^([0-9]{3}) [0-9]{3}-[0-9]{4}$/" -->
+                        <div ng-messages="inputForm.phone.$error">
+                            <div ng-message="pattern">(###) ###-#### - Please enter a valid phone number.</div>
+                        </div>
+                    </md-input-container>
+                    <md-input-container class="md-block" flex>
+                        <label>Mobile Phone</label>
+                        <input name="phone" ng-model="user.mobile">
+                        <!-- ng-pattern="/^([0-9]{3}) [0-9]{3}-[0-9]{4}$/" -->
+                        <div ng-messages="inputForm.phone.$error">
+                            <div ng-message="pattern">(###) ###-#### - Please enter a valid phone number.</div>
+                        </div>
+                    </md-input-container>
+                    <md-input-container class="md-block" flex>
+                        <label>Address</label>
+                        <input ng-model="user.address">
+                    </md-input-container>
+                </div>
+                <div layout="column" layout-gt-xs="row">
+                    <md-input-container class="md-block" flex>
+                        <label>Site</label>
+                        <input name="phone" ng-model="user.site"> <!-- ng-pattern="/^([0-9]{3}) [0-9]{3}-[0-9]{4}$/" -->
+                    </md-input-container>
+                    <md-input-container class="md-block" flex>
+                        <label>Email</label>
+                        <input ng-model="user.email">
+                    </md-input-container>
+                    <md-input-container class="md-block" flex>
+                        <label>Image</label>
+                        <input ng-model="user.image">
+                    </md-input-container>
+                </div>
+            </form>
+        </md-card>
+        <md-card>
+            <form>
+                <img src="https://raw.githubusercontent.com/agragregra/gulp-lesson/master/dist/img/1.jpg" alt="" id="img-prev" width="160" height="160">
+                <canvas id="canvas-prev" width="160" height="160"></canvas>
+                <input type="file" id="image-file" ng-model="image">
+                <md-button href="#" ng-click="save($event)" class="md-primary md-raised">SAVE</md-button>
+            </form>
+        </md-card>
+    </div>
+    <div>
+        <div>
+            <table id="template">
+                <table style="width:448px;border-collapse:collapse;border-spacing:0;font-size:0px;line-height:0px;padding:0px;margin:0px;font-family:Helvetica, 'Helvetica CY', 'Helvetica Neue', Arial, sans-serif;background:#fff;border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;"
+                       cellspacing="0" cellpadding="0">
+                    <tbody>
+                    <tr style="width:448px;vertical-align:top;font-size:0px;line-height:0px;padding:0px;margin:0px;">
+                        <td style="width:448px;vertical-align:top;font-size:0px;line-height:0px;padding:0px;margin:0px;">
+                            <table style="width:448px;border-collapse:collapse;border-spacing:0;font-size:0px;line-height:0px;padding:0px;margin:0px;font-family:Helvetica, 'Helvetica CY', 'Helvetica Neue', Arial, sans-serif;background:#fff;;">
+                                <tbody>
+                                <tr style="width:448px;vertical-align:top;font-size:0px;line-height:0px;padding:0px;margin:0px;">
+                                    <td style="width:448px;vertical-align:top;font-size:0px;line-height:0px;padding:0px;margin:0px;">
+                                        <table style="width:445px;border-collapse:collapse;border-spacing:0;font-size:0px;line-height:0px;padding:0px;margin:0px;font-family:Helvetica, 'Helvetica CY', 'Helvetica Neue', Arial, sans-serif;background:#fff;;">
+                                            <tbody>
+                                            <tr style="width:445px;vertical-align:top;font-size:0px;line-height:0px;padding:0px;margin:0px;">
+                                                <td style="width:445px;vertical-align:top;font-size:12px;color:#999999;line-height:1.53846;padding:0px;margin:0px;"
+                                                    id="signature">
+                                                    <table style="width:448px;font-size:0px;line-height:0px;padding:0px;margin:0px;border-collapse:collapse;">
+
+                                                    </table>
+                                                    <table width="445"
+                                                           style="margin: 0; padding: 0; border-spacing: 0px; width: 445px; font-size: 0; border-collapse: collapse; background-color: #FFFFFF;word-wrap: break-word;word-break: break-all;">
+                                                        <tbody>
+
+                                                        <tr>
+                                                            <td>
+                                                                <table width="445"
+                                                                       style="margin: 0; padding: 0; border-spacing: 0px; border-collapse: collapse">
+                                                                    <tbody>
+                                                                    <tr style="margin: 0; padding: 0; height: 25px">
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                        <td></td>
+                                                                        <td rowspan="2" style="text-align: right;"
+                                                                            align="right">
+                                                                            <img src="http://intend.kiev.ua/images/logo.png.pagespeed.ce.NKS1L6siVY.png"
+                                                                                 style="display: inline;text-align: right;padding-top: 5px;padding-right: 10px;"
+                                                                                 width="114" height="45">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr style="margin: 0; padding: 0; height: 25px">
+
+                                                                        <td></td>
+                                                                        <td rowspan="2" width="140" height="140"
+                                                                            style="margin: 0; padding: 0; overflow: hidden; vertical-align: top; text-align: center">
+                                                                    <span class="photoCircle-wrap"><img
+                                                                            src="{{user.image}}"
+                                                                            width="140" height="140"
+                                                                            style="margin:0; padding: 0;overflow: hidden"></span>
+                                                                        </td>
+                                                                        <td></td>
+
+                                                                        <td style="padding-right: 10px;">
+
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="15"
+                                                                            style="margin: 0;padding: 0;width: 15px"></td>
+                                                                        <td width="0" height="140"
+                                                                            style="margin: 0; padding: 0; overflow: hidden; vertical-align: top; text-align: center">
+                                                                            <span class="photoCircle-wrap"></span>
+                                                                        </td>
+                                                                        <td width="15"
+                                                                            style="margin: 0;padding: 0;"></td>
+                                                                        <td style="margin: 0; padding: 0; vertical-align: top">
+                                                                            <table style="margin: 0; padding: 0; border-spacing: 0px; border-collapse: collapse; width: 100%; color:#919191; font-size:14px">
+                                                                                <tbody>
+                                                                                <tr style="line-height: 21px">
+                                                                                    <td class="text-color"
+                                                                                        style="margin: 0; padding: 0; color: #0d1226; font-size: 16px">
+                                                                                        <span class="username ng-binding">{{user.name}}</span>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr style="line-height: 17px">
+                                                                                    <td class="text-color"
+                                                                                        style="margin: 0; padding: 0; color: #0d1226">
+                                                                                <span class="position-wrap"><span
+                                                                                        class="position ng-binding">{{user.position}}</span></span>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr style="margin:0; padding:0; border:0;height: 10px">
+                                                                                    <td height="10"
+                                                                                        style="margin:0; padding:0; border:0;height: 10px"></td>
+                                                                                </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                            <table style="margin: 0; padding: 0; border-spacing: 0px; border-collapse: collapse; width: 300px; color:#919191; font-size:13px">
+                                                                                <tbody>
+                                                                                <tr>
+                                                                                    <td width="65"
+                                                                                        style="margin: 0; padding: 0; color: #444;vertical-align: top;">
+                                                                                <span class="cellphone-wrap"><span
+                                                                                        class="lang-1">phone</span></span>
+                                                                                    </td>
+                                                                                    <td width="235"
+                                                                                        style="padding:0"><span
+                                                                                            class="cellphone-wrap"><span
+                                                                                            style="color:#919191"><span
+                                                                                            class="cellphone ng-binding">{{user.phone}}</span></span></span>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td width="65"
+                                                                                        style="margin: 0; padding: 0; color: #444;vertical-align: top;">
+                                                                                <span class="signature_email-wrap"><span
+                                                                                        class="lang-4">email</span></span>
+                                                                                    </td>
+                                                                                    <td width="" style="padding:0"><span
+                                                                                            class="signature_email-wrap"><span
+                                                                                            style="color:#919191"><span
+                                                                                            class="signature_email ng-binding">{{user.email}}@intend.kiev.ua</span></span></span>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td width="65"
+                                                                                        style="margin: 0; padding: 0; color: #444;vertical-align: top;">
+                                                                                <span class="addr-wrap"><span
+                                                                                        class="lang-3">address</span></span>
+                                                                                    </td>
+                                                                                    <td width=""
+                                                                                        style="padding:0; word-break: normal;">
+                                                                                <span class="addr-wrap"><span
+                                                                                        style="color:#919191"><span
+                                                                                        class="addr ng-binding">{{user.address}}</span></span></span>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                            <table style="border-spacing: 0px; border-collapse: collapse; font-size:14px;width: 100%">
+                                                                                <tbody>
+                                                                                <tr height="10"
+                                                                                    style="margin: 0; padding: 0; height: 10px">
+                                                                                    <td height="10"></td>
+                                                                                </tr>
+                                                                                <tr style="margin: 0; padding: 0">
+                                                                                    <td>
+                                                                                        <div class="social-icons"
+                                                                                             data-theme="r_b"
+                                                                                             data-wrap="margin:0px 0px 0px 0px;"
+                                                                                             data-icon="padding:0px 10px 0px 0px;">
+                                                                                            <table style="border-spacing: 0px; border-collapse: collapse; font-size:14px;">
+                                                                                                <tbody>
+                                                                                                <tr style="margin: 0; padding: 0; height: 0px;"></tr>
+                                                                                                <tr style="margin: 0; padding: 0;">
+                                                                                                    <td style="width:0px"></td>
+                                                                                                    <td style="width:0px;"></td>
+                                                                                                </tr>
+                                                                                                <tr style="margin: 0; padding: 0; height: 0px;"></tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </table>
+        </div>
+        <div>
+            <h1>CODE</h1>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,47 @@
+@import "bourbon/bourbon"
+@import "sass/_vars"
+@import "sass/fonts"
+
+// Load Libs SASS
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+//Custom Styles Here
+header
+  h1
+    color: pink
+
+.art-head
+  h2
+    color: red
+
+.img-box
+  img
+    width: 100%
+
+.mama-i-test-this
+  display: flex
+
+//ALWAYS END
+@import "sass/_media"
